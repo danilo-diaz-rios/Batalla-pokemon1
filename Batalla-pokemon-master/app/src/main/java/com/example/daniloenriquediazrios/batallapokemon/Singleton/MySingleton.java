@@ -1,4 +1,4 @@
-package com.example.daniloenriquediazrios.batallapokemon;
+package com.example.daniloenriquediazrios.batallapokemon.Singleton;
 
 import android.content.Context;
 import android.graphics.Bitmap;

@@ -1,4 +1,4 @@
-package com.example.daniloenriquediazrios.batallapokemon;
+package com.example.daniloenriquediazrios.batallapokemon.Infopokemon;
 
 import org.json.JSONException;
 import org.json.JSONObject;

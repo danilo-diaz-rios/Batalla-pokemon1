@@ -1,9 +1,12 @@
-package com.example.daniloenriquediazrios.batallapokemon;
+package com.example.daniloenriquediazrios.batallapokemon.Vistas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.daniloenriquediazrios.batallapokemon.DowloadTask;
+import com.example.daniloenriquediazrios.batallapokemon.R;
 
 public class Elmejor extends AppCompatActivity {
 

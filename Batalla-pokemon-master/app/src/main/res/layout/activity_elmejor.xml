@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pokemon_gradient"
-    tools:context="com.example.daniloenriquediazrios.batallapokemon.Elmejor">
+    tools:context="com.example.daniloenriquediazrios.batallapokemon.Vistas.Elmejor">
 
     <ImageView
         android:id="@+id/imagenpokemon1"

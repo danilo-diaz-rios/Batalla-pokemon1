@@ -1,4 +1,4 @@
-package com.example.daniloenriquediazrios.batallapokemon;
+package com.example.daniloenriquediazrios.batallapokemon.Vistas;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,10 +12,16 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.example.daniloenriquediazrios.batallapokemon.DowloadTask;
+import com.example.daniloenriquediazrios.batallapokemon.Singleton.MySingleton;
+import com.example.daniloenriquediazrios.batallapokemon.Infopokemon.Pokemon;
+import com.example.daniloenriquediazrios.batallapokemon.R;
 
 import org.json.JSONObject;
 
 public class MainActivity extends Activity {
+
+    //se declaran las variales que vayamos a utilizar
     TextView mTxtDisplay,
             mTxtDisplay1;
     String nombre1,
@@ -32,11 +38,13 @@ public class MainActivity extends Activity {
         mTxtDisplay = (TextView) findViewById(R.id.pokemonName1);
         mTxtDisplay1 = (TextView) findViewById(R.id.pokemonName2);
 
-
+        //se crea un botonrandom que lo que hace es generar pokemones random
+        //se le crea la funcionalidad al boton
         botonRandom = (Button) findViewById(R.id.botonRandom);
         botonRandom.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
+                //aqui se dice que traiga un pokemon random pero con un limite hasta 721 pokemon de la pokeapi
                 int indicePokemon = (int) (Math.random() * 721);
                 String url1 = ("https://pokeapi.co/api/v2/pokemon/" + indicePokemon);
                 getJson1(url1);
@@ -48,7 +56,9 @@ public class MainActivity extends Activity {
         });
 
 
-
+        //se crea la funcionalidad del boton pelear
+        //donde en esta funcionalidad muestra el nombre y la imagen en la vista de peleamaxima de la vista anterior del mainactivity
+        //ademas que en este metodo se iria a la vista donde se hace la batalla de los pokemon
         botonPelear = (Button) findViewById(R.id.botonpelear);
         botonPelear.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -67,7 +77,7 @@ public class MainActivity extends Activity {
         });
 
     }
-
+        //en este metodo se esta jalando lo que es la imagen y el nombre de la pokeapi
         public void getJson1(String url) {
             JsonObjectRequest jsObjRequest = new JsonObjectRequest
                     (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

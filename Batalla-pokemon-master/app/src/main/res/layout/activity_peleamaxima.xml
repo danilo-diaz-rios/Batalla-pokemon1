@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pokemon_gradient"
-    tools:context="com.example.daniloenriquediazrios.batallapokemon.peleamaxima">
+    tools:context="com.example.daniloenriquediazrios.batallapokemon.Vistas.peleamaxima">
 
     <ImageView
         android:id="@+id/imagenpokemon1"
