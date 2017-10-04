@@ -10,6 +10,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        testApplicationId "com.example.daniloenriquediazrios.batallapokemon.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+
+    }
+
+
+    testOptions{
+        reportDir = "$project.buildDir/results/report"
+        resultsDir = "$project.buildDir/results"
     }
     buildTypes {
         release {

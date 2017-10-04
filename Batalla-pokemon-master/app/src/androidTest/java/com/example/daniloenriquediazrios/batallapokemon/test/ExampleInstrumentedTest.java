@@ -1,4 +1,4 @@
-package com.example.daniloenriquediazrios.batallapokemon;
+package com.example.daniloenriquediazrios.batallapokemon.test;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
