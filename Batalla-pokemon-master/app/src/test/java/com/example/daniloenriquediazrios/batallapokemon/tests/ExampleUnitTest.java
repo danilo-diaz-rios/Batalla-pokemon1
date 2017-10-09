@@ -15,4 +15,13 @@ public class ExampleUnitTest {
 
         assertEquals(4, 2 + 2);
     }
+    
+    public void programacion2() throws Exception{
+        
+        Pokemon p = new Pokemon();
+        
+        assertEquals("https://pokeapi.co/api/v2/pokemon/4",p.validacion_url(4));
+
+
+    }
 }
