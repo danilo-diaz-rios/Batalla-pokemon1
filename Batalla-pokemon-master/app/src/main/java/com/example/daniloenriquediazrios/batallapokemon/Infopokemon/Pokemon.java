@@ -52,6 +52,12 @@ public class Pokemon {
         }
         return back_image_url;
     }
+    public String validacion_url(int a){
+        
+        String pokeurl = "https://pokeapi.co/api/v2/pokemon/" + a + "";
+
+        return pokeurl;
+    }
 
     }
 
